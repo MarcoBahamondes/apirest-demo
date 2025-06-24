@@ -1,0 +1,24 @@
+ZN "USER"
+Do $System.OBJ.LoadDir("/irisdev/app/cls", "ck", .errors)
+
+Set p = ##class(Demo.Producto).%New()
+Set p.Nombre = "Martillo"
+Set p.Precio = 220
+Do p.%Save()
+
+Set p = ##class(Demo.Producto).%New()
+Set p.Nombre = "Parlantes"
+Set p.Precio = 450
+Do p.%Save()
+
+Set p = ##class(Demo.Producto).%New()
+Set p.Nombre = "Radio"
+Set p.Precio = 320
+Do p.%Save()
+
+Set p = ##class(Demo.Producto).%New()
+Set p.Nombre = "PC"
+Set p.Precio = 4500
+Do p.%Save()
+
+Halt
